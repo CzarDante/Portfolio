@@ -1,0 +1,53 @@
+/*
+---------------------------
+   INSTAGRAM MICROANIMATION
+---------------------------
+*/
+.instagram-icon {
+    width: 90px !important;
+
+}
+.st0 {
+    fill:none;
+    stroke:#EF4649;
+    stroke-width:7;
+    stroke-linecap:round;
+    stroke-miterlimit:10;
+}
+
+.instagram:hover #littleCircle {
+    stroke-dasharray:150;
+}
+
+.instagram #shutter{
+    display:none;
+}
+.instagram:hover #shutter{
+    display: block;
+    animation: shutter 1s linear infinite;
+}
+.instagram:hover #lens{
+    fill:#EF4649;
+    animation: lens 1.5s linear infinite;
+}
+
+@keyframes shutter {
+    0%, 50% {
+            stroke-dashoffset: 150;
+            
+        }
+    75% {
+            fill:#EF4649;
+            stroke-dashoffset: 0;
+            stroke-width:11;
+        }
+}
+
+@keyframes lens {
+    0%, 75% {
+            opacity: 0;
+        }
+    100% {
+            opacity: 1;
+        }
+}

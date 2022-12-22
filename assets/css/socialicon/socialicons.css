@@ -1,0 +1,67 @@
+:root {
+    --link-size: 64px;
+    --trans-props: all 0.2s ease;
+    --link-size-footer-b: 40px;
+    --link-size-footer-s: 30px;
+  }
+  
+  a.socialicon {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .social-icons {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  
+  .socialicon {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: var(--link-size);
+    height: var(--link-size);
+    background-color: #fff;
+    margin: 8px;
+    border-radius: 50%;
+    box-shadow: 2px 5px 5px var(--shadow-col);
+    text-decoration: none;
+    transition: var(--trans-props);
+    background-color: var(--col-socialicons-backgroud);
+  }
+  
+  .socialicon i {
+    margin: auto;
+    font-size: 24px;
+    z-index: 1;
+    transition: var(--trans-props);
+  }
+  
+  .kaggle i {
+    margin: auto;
+    font-size: 24px;
+    z-index: 1;
+    transition: var(--trans-props);
+  }
+  
+  .socialicon.kaggle {
+    color: var(--col-icon-kaggle);
+  }
+  
+  .socialicon:after {
+    content: "";
+    width: var(--link-size);
+    height: var(--link-size);
+    position: absolute;
+    transform: translate(0, var(--link-size));
+    border-radius: 50%;
+    transition: var(--trans-props);
+  
+  }
+  
+  .socialicon.kaggle:after {
+    background-color: #41aff3;
+    box-shadow: var(--kaggle);
+  }

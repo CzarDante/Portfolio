@@ -1,0 +1,13 @@
+@import url("./socialicon/codeforces.css");
+@import url("./socialicon/github.css");
+@import url("./socialicon/instagram.css");
+@import url("./socialicon/linkedin.css");
+@import url("./socialicon/twitter.css");
+@import url("./socialicon/socialicons.css");
+@import url("../css/style.css");
+
+/* Particle effect*/
+body {
+  font-family: "Poppins";
+}
+
