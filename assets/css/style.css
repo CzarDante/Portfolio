@@ -1,7 +1,7 @@
 html[data-theme="light"] {
     --col-icon: black;
     --col-bd-radius: rgb(2, 2, 2);
-    --col-box-shadow: #000000 2px 2px 4px,#4D4D4D -2px -2px 4px;
+    --col-box-shadow: #000000 2px 2px 4px, #4D4D4D -2px -2px 4px;
     --col-box-shadow-hover: inset #8a7373 2px 2px 4px, inset #4D4D4D -2px -2px 4px;
     --col-bd-icon: transparent;
     --bg-icon: #fff;
@@ -49,7 +49,7 @@ html[data-theme="dark"] {
     --col-box-shadow-hover: inset rgba(255, 255, 255, 1) 2px 2px 4px,
         inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
     /*social icons*/
-    --col-socialicons-backgroud: #141516;    
+    --col-socialicons-backgroud: #141516;
     --col-icon-dribbble: #ea4c89;
     --col-icon-linkedin: #0e76a8;
     --col-icon-kaggle: #41aff3;
@@ -59,7 +59,7 @@ html[data-theme="dark"] {
     --col-icon-codeforces: rgb(19, 145, 184);
     --col-icon-leetcode: rgb(255, 181, 62);
     --col-icon-github: #ffff;
-    
+
     --col-white: #fff;
     --col-particle-js-color: #000000;
     --col-main-text-color: #ebd7d7;
@@ -72,39 +72,50 @@ html[data-theme="dark"] {
 
 #home,
 #particles-js {
-  position: relative;
-  background-color: var(--col-particle-js-color);
-  height: 100vh;
-  width: 100%;
+    position: relative;
+    background-color: var(--col-particle-js-color);
+    height: 100vh;
+    width: 100%;
+}
+
+#theme-toggle {
+    width: 80px;
+    height: 40px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
 }
 
 .section {
-  background-color: rgb(63, 25, 170);
-  justify-content: center;
-  align-items: center;
+    background-color: rgb(63, 25, 170);
+    justify-content: center;
+    align-items: center;
 }
 
 .text .header {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .text {
-  font-size: 25px;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  color: var(--col-main-text-color);
+    font-size: 25px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: var(--col-main-text-color);
 }
 
 @keyframes blink {
-  from {
-    opacity: 0;
-  }
+    from {
+        opacity: 0;
+    }
 
-  to {
-    opacity: 1;
-  }
+    to {
+        opacity: 1;
+    }
 }
 
 #check {
