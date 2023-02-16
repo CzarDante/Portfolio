@@ -1,0 +1,47 @@
+@import url("../css/style.css");
+.row
+{
+    display: flex;
+    position: absolute;
+    top: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--col-card-backgroud);
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0 rgba(50,50,50,0.22);
+    top: 0px;
+    padding: 20px;
+    margin: 20px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.card h2{
+    color: var(--col-main-text-color);
+}
+.card p{
+    color: var(--col-main-text-color);
+    font-size: 14px;
+}
+
+.card image{
+    float: initial;
+    max-width: 64px;
+    max-height: 64px;
+}
+
+.green {
+    border-left: 3px solid #3bb54a;
+}
+
+.blue {
+    border-left: 3px solid #4895ff;
+}
