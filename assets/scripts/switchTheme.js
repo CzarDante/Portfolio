@@ -10,11 +10,11 @@ if (storedTheme)
 toggle.onclick = function() {
     var currentTheme = document.documentElement.getAttribute("data-theme");
     var targetTheme = "light";
-    circle_toggle.style.transform="translateX(0px)";
+    circle_toggle.style.transform="translateX(-38px)";
 
     if (currentTheme === "light") {
         targetTheme = "dark";
-        circle_toggle.style.transform="translateX(38px)";
+        circle_toggle.style.transform="translateX(0px)";
     }
 
     document.documentElement.setAttribute('data-theme', targetTheme)

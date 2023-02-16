@@ -34,6 +34,8 @@ html[data-theme="light"] {
     --col-main-text-color: #000000;
 
     --col-ball-theme-toggle: rgb(255,181,62);
+    /*Card style*/
+    --col-card-backgroud: rgb(229, 230, 250);
 }
 
 html[data-theme="dark"] {
@@ -66,6 +68,8 @@ html[data-theme="dark"] {
     --col-particle-js-color: #000000;
     --col-main-text-color: #ebd7d7;
     --col-ball-theme-toggle: rgb(8, 3, 32);
+
+    --col-card-backgroud: rgb(20, 19, 19);
 }
 
 * {
@@ -242,7 +246,7 @@ body {
     width: 36px;
     height: 36px;
     top: 0px;
-    left: 1px;
+    left: 38px;
     background-color: var(--col-ball-theme-toggle);
     border-radius: 50%;
     transition: transform 0.2s linear;
